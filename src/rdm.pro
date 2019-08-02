@@ -26,8 +26,7 @@ SOURCES += \
     $$PWD/modules/connections-tree/*.cpp \
     $$PWD/modules/connections-tree/items/*.cpp \
     $$PWD/modules/console/*.cpp \
-    $$PWD/modules/value-editor/*.cpp \
-    $$PWD/modules/crashhandler/*.cpp \
+    $$PWD/modules/value-editor/*.cpp \    
     $$PWD/modules/updater/*.cpp \
     $$PWD/modules/bulk-operations/*.cpp \
     $$PWD/modules/bulk-operations/operations/*.cpp \
@@ -45,8 +44,7 @@ HEADERS  += \
     $$PWD/modules/connections-tree/*.h \
     $$PWD/modules/connections-tree/items/*.h \
     $$PWD/modules/console/*.h \
-    $$PWD/modules/value-editor/*.h \
-    $$PWD/modules/crashhandler/*.h \
+    $$PWD/modules/value-editor/*.h \    
     $$PWD/modules/updater/*.h \
     $$PWD/modules/*.h \
     $$PWD/modules/bulk-operations/*.h \
