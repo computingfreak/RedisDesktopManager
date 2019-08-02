@@ -33,6 +33,7 @@ install:
        ;
   fi
 - qmake -v
+
 script:
   - git submodule update --init --recursive 
   - pushd tests
@@ -43,6 +44,7 @@ script:
        pushd src && qmake && make -s -j 2 && popd
        ; 
     fi
+
 after_success:
  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then
       pushd tests &&
