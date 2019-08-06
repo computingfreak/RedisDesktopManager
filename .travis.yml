@@ -25,12 +25,8 @@ install:
     && export PATH=/usr/local/opt/qt5/bin/:$PATH
     ;
   fi
-- if [ "$TRAVIS_OS_NAME" == "linux" ]; then
-       sudo apt-get update -y && 
-       sudo apt-get install qt5-default qtdeclarative5-dev libqt5charts5-dev \
-             qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qt-labs-settings \
-             qml-module-qtquick-dialogs qml-module-qtquick-layouts qml-module-qt-labs-folderlistmodel \
-             qml-module-qtqml-models2 qml-module-qtcharts libssl1.0-dev  -y
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then       
+       sudo apt-get install qt5-default qtdeclarative5-dev libqt5charts5-dev libssl1.0-dev  -y
        ;
   fi
 - qmake -v
