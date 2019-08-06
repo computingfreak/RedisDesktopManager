@@ -36,11 +36,6 @@ unix:macx { # OSX
     LIBS += /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
     LIBS += /System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
     LIBS += -lz
-
-    #deployment
-    APP_DATA_FILES.files = $$PWD/../build/gbreakpad/Products/Release/Breakpad.framework
-    APP_DATA_FILES.path = Contents/Frameworks
-    QMAKE_BUNDLE_DATA += APP_DATA_FILES
 }
 
 unix:!macx { # ubuntu & debian   
