@@ -85,12 +85,6 @@ unix:macx { # OSX
     #deployment
     QMAKE_INFO_PLIST =  $$PWD/resources/Info.plist
     ICON = $$PWD/resources/rdm.icns
-
-    release {
-        CRASHREPORTER_APP.files = $$DESTDIR/crashreporter
-        CRASHREPORTER_APP.path = Contents/MacOS
-        QMAKE_BUNDLE_DATA += CRASHREPORTER_APP
-    }
 }
 
 unix:!macx { # ubuntu & debian
